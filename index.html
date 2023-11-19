@@ -7,6 +7,8 @@
 
     
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+
 </head>
 <body>
 
@@ -94,9 +96,11 @@ Events section
 Product advantages section 
 ========================================= -->   
 <div class="product-advantages-image">
-    <div class="product-advantages-text">
-      Our Product Advantages
-   </div>
+
+    <div class="centered-image">
+        <img src="Assets\advantages.png" alt="Centered Image">
+    </div>
+
 </div>
 
 
@@ -113,36 +117,56 @@ Select parameters section
     <div class="select-parameters-text">
         <p>Select Parameters </p>
     </div>
+    <!-- Dropdown menu -->
+    <div class="dropdowns">
+        <div class="dropdown">
+            <select id="player-type">
+                <option value="" disabled selected>Select Player Type</option>
+                <option value="batsman">Batsman</option>
+                <option value="bowler">Bowler</option>
+            </select>
+        </div>
+        
+        <div class="dropdown">
+            <select id="select-player">
+                <option value="" disabled selected>Select Player</option>
+                <option value="player1">Player 1</option>
+                <option value="player2">Player 2</option>
+            </select>
+        </div>
+        
+        <div class="dropdown">
+            <select id="select-stadium">
+                <option value="" disabled selected>Select Stadium</option>
+                <option value="stadium1">Stadium 1</option>
+                <option value="stadium2">Stadium 2</option>
+            </select>
+        </div>
+        
+        <div class="dropdown date-dropdown">
+            <input type="text" id="select-date" readonly placeholder="Select Date">
+            <div id="calendar" class="calendar"></div>
+        </div>
+    </div>
     
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+    <script src="script.js"></script>
+    <button class="generate-outcome">Generate Outcome</button>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- ======================================
 Footer section 
 ========================================= -->    
 
-<div class="footer">    
-    <div class="footer-text">
-        <p>footer </p>
-    </div>
-</div>
+<footer class="site-footer">
+    <p>Website made by</p>
+    <p>Shifali, Shriram, Srishant, Swastik, Vinitkumar</p>
+</footer>function showMessage() {
+    alert("Please refer to the instructions.");
+}
 
 </body>
 </html>
