@@ -20,7 +20,7 @@ Hero section
     padding-left: 50px;
 
     color: white;
-    font-size: 6 rem;
+    font-size: 20px; 
     
 }
 
@@ -28,24 +28,33 @@ Hero section
 Events section 
 ============================ */
 
-.events{
-    color: black;
-    font-size: 6 rem;
+    .events{
     background-color: #E8E8E8;
-}
+    height: 580px;
+    }
     
-.events-text{
+    .events-text{
     text-align: center;
-}
+    color: black;
+    font-size: 40px; 
+    padding-top: 57px;
+    }
+
+    .all-events-cointainer{
+        display: flex;
+    justify-content: center;
+        
+    }
 
 
 
-.events-container {
+    .events-container {
         width: 256px;
         height: 276px;
         position: relative;
         border: 2px solid #D0CA39;
         background-color: white;
+        margin: 0 100px;
     }
     
     .top-box {
@@ -80,6 +89,43 @@ Events section
         border-color: #3962C3 transparent transparent transparent;
     }
 
+    .image-container {
+        position: absolute;
+        top: 64px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .image {
+        width: 81px;
+        height: 54px;
+    }
+    
+    .vs-text {
+        font-size: 18px;
+        color: #333; /* Adjust text color as needed */
+        margin: 0 10px; /* Add margin between vs and images */
+    }
+    
+    .team-names {
+        position: absolute;
+        top: 120px; /* 10px below the images */
+        left: 40px; /* Adjust as needed */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .first-team-text {
+        color: #333; /* Adjust text color as needed */
+        margin: 0;
+    }
+    .second-team-text{
+        color: #333; /* Adjust text color as needed */
+        padding-left: 60px;
+    }
+
 .predict-button {
     width: 208px;
     height: 37px;
@@ -99,3 +145,121 @@ Events section
     color: #fff;
 }
 
+.center-container{
+     text-align: center;
+}
+.view-all-button {
+   
+    width: 208px;
+    height: 37px;
+
+    border: 2px solid #3962C3;
+    background-color: transparent;
+    color: #3962C3;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 41px;
+
+}
+
+.view-all-button:hover {
+    background-color: #3962C3;
+    color: #fff;
+
+}
+
+
+/*========================== 
+Product advantages section 
+============================ */
+
+.product-advantages-image {
+    height: 444px;
+    width: 100%;
+    background-image: url('Assets/Cricket Ball Image.png'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.product-advantages-text {
+    color: white;
+    font-size: 40px; 
+    text-align: center;
+    padding-top: 91px;
+
+
+}
+
+/*========================== 
+Select parameters section 
+============================ */
+
+.select-parameters{
+    background-color: #E8E8E8;
+    height: 752px;
+    align-items: center;
+    position: relative;
+    }
+    
+
+    .white-box{
+        height: 575px;
+        width: 949px;
+        background-color: white;
+        position: absolute;
+        top: 50%; /* Position the square at the vertical center of the outer rectangle */
+    left: 50%; /* Position the square at the horizontal center of the outer rectangle */
+    transform: translate(-50%, -50%); /* Center the square precisely */
+
+    }
+    .select-parameters-text{
+    text-align: center;
+    color: black;
+    font-size: 40px; 
+    padding-top: 48px;
+    }
+
+    .cricketer-image {
+        width: 309px; /* Cover the entire width of the outer rectangle */
+        height: 712px; /* Maintain the aspect ratio of the image */
+        position: absolute;
+        bottom: 0; /* Start the image from the bottom of the outer rectangle */
+        right: 76px;
+        z-index: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================== 
+Footer section 
+============================ */
+
+.footer{
+    background-color: black;
+    height: 298px;
+    }
+    
+    .footer-text{
+    text-align: center;
+    color: white;
+    font-size: 40px; 
+    padding-top: 57px;
+    }    
