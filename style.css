@@ -5,12 +5,97 @@ body {
 }
 
 
-.header {
+/*========================== 
+Hero section 
+============================ */
+
+.hero {
     
-    background-image: url('Assets\Cricketer cover.png');
+    background-image: url('Assets/Cricketer cover.png');
     background-size: cover;
     background-position: center;
-    background-color: #19524f;
+    background-color: #46c2bc;
+    padding-top: 230px;
+    padding-bottom: 230px;
+    padding-left: 50px;
+
+    color: white;
+    font-size: 6 rem;
     
+}
+
+/*========================== 
+Events section 
+============================ */
+
+.events{
+    color: black;
+    font-size: 6 rem;
+    background-color: #E8E8E8;
+}
+    
+.events-text{
+    text-align: center;
+}
+
+
+
+.events-container {
+        width: 256px;
+        height: 276px;
+        position: relative;
+        border: 2px solid #D0CA39;
+        background-color: white;
+    }
+    
+    .top-box {
+        width: 109px;
+        height: 49px;
+        position: absolute;
+        top: -24.5px; /* Half of the height */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #3962C3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative; /* Added this line for positioning the triangle */
+    }
+    
+    .date,
+    .time {
+        color: white;
+        font-size: 12px;
+    }
+    
+    .top-box::after {
+        content: '';
+        position: absolute;
+        bottom: -10px; /* Adjust this value as needed */
+        left: 50%;
+        margin-left: -5px; /* Half of the triangle base width */
+        border-width: 5px;
+        border-style: solid;
+        border-color: #3962C3 transparent transparent transparent;
+    }
+
+.predict-button {
+    width: 208px;
+    height: 37px;
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #D0CA39;
+    background-color: transparent;
+    color: #D0CA39;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.predict-button:hover {
+    background-color: #D0CA39;
+    color: #fff;
 }
 
